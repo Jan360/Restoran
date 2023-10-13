@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div id="nav" class="overlay">
+            
+      <div class="overlay-content">
+        <div class="overlay-block1">
+          <span title="Food" class="logo"></span>
+          <span class="closebtn" onclick="closeNav()">&times;</span>
+        </div>
+        <div class="overlay-block2">
+          <a href="#">Меню</a>
+          <a href="#">Доставка</a>
+          <a href="#">Оплата</a>
+          <button class="big-btn">Бронь столика</button>
+        </div>
+        <div class="nav-logos">
+          <a href="#" class="youtube-logo"></a>
+          <a href="#" class="vk-logo"></a>
+          <a href="#" class="telegram-logo"></a>
+        </div>
+      </div>
+    </div>
+    
+    <section>
+      <aside class="aside d-flex">
+        <div class="aside-top">
+          <a href="#" title="Food" class="logo"></a>
+          <!-- Меню -->
+          <a href="#" class="menu-logo" onclick="openNav()"></a>
+
+        </div>
+        <div class="aside-bottom">
+          <a href="#" class="youtube-logo"></a>
+          <a href="#" class="vk-logo"></a>
+          <a href="#" class="telegram-logo"></a>
+        </div>
+      </aside>
+
+      <div class="container2">
+        <div class="header-main-acc">
+          <a class="">Личный кабинет</a>
+          <div class="account"></div>
+          <div class="shopping-basket"></div>
+        </div>
+        
+      </div>
+    </section>
+  </header>
+  <main>
+
+
+    <section class="cards">
+      <div class="container2">
+        <div class="nav-food">
+          <span>Завтраки</span>
+          <span>Raw</span>
+          <span>Холодные закуски</span>
+          <span>Брускетты</span>
+          <span>К вину</span>
+          <span>Салаты</span>
+          <span>Супы</span>
+          <span>Паста и ризотто</span>
+          <span>Мясо</span>
+          <span>Рыба</span>
+          <span>Grill</span>
+          <span>Мангал</span>
+          <span>Гарниры</span>
+        </div>
+        <div class="dish">
+          <div class="dish-block1">
+            <img src="./img/cards/1.png" alt="">
+            <div class="dish-block-images">
+              <img src="./img/cards/1.png" alt="">
+              <img src="./img/cards/1.png" alt="">
+              <img src="./img/cards/1.png" alt="">
+            </div>
+            
+          </div>
+          <div class="dish-block2">
+            <h2>Яичница-глазунья из трех яиц</h2>
+            <span class="line"></span>
+            <p class="dish-price">250 ₽ <span>/ 400 грамм</span></p>
+            <p><b>Количество порций:</b></p>
+            <div class="dish-buttons">
+              <input type="number">
+              <button class="btn">В корзину</button>
+            </div>
+            <span class="line"></span>
+            <h2 class="dish-block2-subtitle">Сделать еще вкуснее</h2>
+            <div class="dish-options">
+              <div>
+                <div class="block" id="options1">
+                  <p>Тигровые креветки 60 г</p>
+                  <p class="">450 ₽</p>
+                </div>
+                <input type="checkbox">
+              </div>
+              <div>
+                <div class="block">
+                  <p>Томаты / паприка</p>
+                  <p>80 ₽</p>
+                </div>
+                <input type="checkbox">
+              </div>
+              <div>
+                <div class="block">
+                  <p>Бекон</p>
+                  <p>120 ₽</p>
+                </div>
+                <input type="checkbox">
+              </div>
+              <div>
+                <div class="block">
+                  <p>Сыр чеддер 30 г</p>
+                  <p>80 ₽</p>
+                </div>
+                <input type="checkbox">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacts -->
+    <section class="contacts">
+      <div class="container2">
+        <p class="section-p">Контакты</p>
+        <div class="contacts-block">
+          
+          <div class="time-blocks">
+            <div class="time-block1">
+              <div class="time-block-block">
+                <h2>2 <span>мин</span></h2>
+                <p>из центра Санкт-Петербурга</p>
+              </div>
+              <div class="time-block-block">
+                <h2>12 <span>мин</span></h2>
+                <p>из города Зеленогорск</p>
+              </div>
+            </div>
+            <div class="time-block2">
+              <div class="time-block-block">
+                <h2>42 <span>мин</span></h2>
+                <p>из аэропорта Пулково</p>
+              </div>
+              <div class="time-block-block">
+                <h2>52 <span>мин</span></h2>
+                <p>из города Павловск</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="time-work">
+            <div class="time-work-block">
+              <p>Санкт-Петербург, Северная дорога, 11 </p>
+              <p>+7 (921) 777-77-77</p>
+              <p><b>Время работы</b></p>
+              <p><b>Вск-Чт</b> с 12:00 до 23:00</p>
+              <p><b>Пт-Сб</b> с 12:00 до 03:00</p>
+              <div class="time-work-btn-block">
+                <a href="#modal" class="btn">Бронь столика</a>
+                <a href="#" class="btn2">Задать вопрос</a>
+              </div>
+            </div>
+          </div>
+          <div class="map"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container2">
+      <div class="footer-block">
+        <div class="food-logo"></div>
+        <p>Политика конфиденциальности</p>
+        <p>Дизайн d-e-n.ru</p>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

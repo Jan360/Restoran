@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <!-- Curtain Menu -->
+    <div id="nav" class="overlay">
+      <div class="overlay-content">
+        <div class="overlay-block1">
+          <span title="Food" class="logo"></span>
+          <span class="closebtn" onclick="closeNav()">&times;</span>
+        </div>
+        <div class="overlay-block2">
+          <a href="#">Меню</a>
+          <a href="#">Доставка</a>
+          <a href="#">Оплата</a>
+          <button class="big-btn">Бронь столика</button>
+        </div>
+        <div class="nav-logos">
+          <a href="#" class="youtube-logo"></a>
+          <a href="#" class="vk-logo"></a>
+          <a href="#" class="telegram-logo"></a>
+        </div>
+      </div>
+    </div>
+
+    <section class="header">
+      <aside class="aside d-flex">
+        <div class="aside-top">
+          <a href="#" title="Food" class="logo"></a>
+          <!-- Вызов curtain menu -->
+          <a href="#" class="menu-logo" onclick="openNav()"></a> 
+        </div>
+        <div class="aside-bottom">
+          <a href="#" class="youtube-logo"></a>
+          <a href="#" class="vk-logo"></a>
+          <a href="#" class="telegram-logo"></a>
+        </div>
+      </aside>
+      <div class="header-main">
+        <div class="nav-links" id="navLinks">
+          <ul class="nav-item d-flex">
+            <li>
+              <a class="nav-link" href="#">Меню</a>
+            </li>
+            <li>
+              <a class="nav-link" href="delivery.html">Доставка</a>
+            </li>
+            <li>
+              <a class="nav-link" href="payment.html">Оплата</a>
+            </li>
+            
+          </ul>
+          <button class="btn" id="btn">Бронь столика</button>
+            <!-- Modal box -->
+            <div id="modal" class="modal"> 
+              <div class="modal-content">
+                <span class="close" id="close">&times;</span>
+                <div class="modal-block">
+                  <div class="food-logo"></div>
+                  <p>Забронировать столик</p>
+                  <input class="modal-input" type="text" placeholder="Имя">
+                  <input class="modal-input" type="tel" placeholder="Телефон">
+                  <div class="modal-block-numbers">
+                    <input class="modal-input2" type="number" placeholder="Гостей">
+                    <input class="modal-input2" type="number" placeholder="Время">
+                  </div>
+                  <a class="btn" href="#modal">Забронировать</a>
+                </div>
+              </div>
+            </div>
+        </div>
+        <h1>Видовой ресторан Food Exxe Relo на Крестовском острове</h1>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <!-- About -->
+    <section class="about">
+      <div class="container">
+        <p class="section-p">О ресторане</p>
+        <div class="inner-container">
+          <h1>Food Exxe Relo</h1>
+          <div class="inner-container-text">
+            <p>Sed vel ornare ut rhoncus, ac ut nibh. Amet at sit et nibh. In lectus phasellus non ornare eget velit. Facilisi urna, tristique dui, rhoncus, dolor. Tincidunt enim gravida dignissim leo pulvinar sit volutpat nulla vestibulum.</p>
+            <p>Morbi pellentesque enim massa laoreet vel id. Lectus ac, facilisis neque turpis. Morbi massa enim nullam sem vehicula. Amet quis pellentesque enim porttitor lectus interdum. Nisi, faucibus pharetra at porttitor. Fringilla luctus pretium in viverra. In adipiscing tempor amet malesuada ullamcorper ut sagittis. Dui, scelerisque vulputate risus massa dictum. Cras at quis in eu, faucibus feugiat vel. At.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Menu -->
+    <section class="menu">
+      <div class="container">
+        <p class="section-p">Меню</p>
+        <div class="inner-container">
+          <h1>Меню</h1>
+          <div>
+            <p>At faucibus nullam mauris vitae ut non. Augue libero non nibh nec, et eget erat. Nascetur nunc neque, varius massa aliquam interdum turpis massa. Ac tortor aliquam risus, interdum nisl mauris sit. Ut placerat fermentum pellentesque ac at. Vitae venenatis faucibus urna mi eget vitae quam eu. Euismod sed mauris id turpis iaculis. Erat rutrum dolor, vitae morbi.</p>
+          <p>Nunc cras cras aliquet blandit faucibus massa sagittis semper. </p>
+          </div>
+        </div>
+        <div class="menu-images">
+          <div class="menu-image-block">
+            <div class="image-border"></div>
+            <img src="img/Rectangle_40.png" alt="Основное Меню">
+            <h2 class="menu-image-title">Основное меню</h2>
+          </div>
+          <div class="menu-image-block">
+            <div class="image-border"></div>
+            <img src="img/Rectangle_42.png" alt="Барная Карта">
+            <h2 class="menu-image-title">Барная карта</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Delivery -->
+    <section class="delivery">
+      <div class="container">
+        <p class="section-p">Доставка</p>
+        <div class="inner-container">
+          <h1>Служба доставки</h1>
+          <div class="delivery-block">
+            <p>Phasellus diam, ultrices lobortis integer et. Diam, purus vel sagittis, non, a. In risus, venenatis enim vitae mauris aliquet orci. Consectetur nibh interdum nullam ut lobortis eu etiam sem. Et in vitae pellentesque non, lectus orci natoque faucibus suspendisse. Semper aliquam id et ultrices velit donec lacus. In odio sit nibh volutpat cras placerat sit feugiat dignissim. Rutrum et suspendisse tortor, lobortis eleifend in fringilla. Egestas cursus imperdiet cursus dui, nulla id massa. Hendrerit nam enim semper porttitor imperdiet diam semper. Nulla sit etiam cras morbi enim elementum euismod sapien.</p>
+            <div class="delivery-buttons">
+              <a class="delivery-button1" href="#">Подробнее</a>
+              <a class="delivery-button2" href="#">Условия доставки</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contacts -->
+    <section class="contacts">
+      <div class="container2">
+        <p class="section-p">Контакты</p>
+        <div class="contacts-block">
+          
+          <div class="time-blocks">
+            <div class="time-block1">
+              <div class="time-block-block">
+                <h2>2 <span>мин</span></h2>
+                <p>из центра Санкт-Петербурга</p>
+              </div>
+              <div class="time-block-block">
+                <h2>12 <span>мин</span></h2>
+                <p>из города Зеленогорск</p>
+              </div>
+            </div>
+            <div class="time-block2">
+              <div class="time-block-block">
+                <h2>42 <span>мин</span></h2>
+                <p>из аэропорта Пулково</p>
+              </div>
+              <div class="time-block-block">
+                <h2>52 <span>мин</span></h2>
+                <p>из города Павловск</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="time-work">
+            <div class="time-work-block">
+              <p>Санкт-Петербург, Северная дорога, 11 </p>
+              <p>+7 (921) 777-77-77</p>
+              <p><b>Время работы</b></p>
+              <p><b>Вск-Чт</b> с 12:00 до 23:00</p>
+              <p><b>Пт-Сб</b> с 12:00 до 03:00</p>
+              <div class="time-work-btn-block">
+                <a href="#modal" class="btn">Бронь столика</a>
+                <a href="#" class="btn2">Задать вопрос</a>
+              </div>
+            </div>
+          </div>
+          <div class="map"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container2">
+      <div class="footer-block">
+        <div class="food-logo"></div>
+        <p>Политика конфиденциальности</p>
+        <p>Дизайн d-e-n.ru</p>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
