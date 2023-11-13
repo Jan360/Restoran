@@ -17,10 +17,10 @@
           <span class="closebtn" onclick="closeNav()">&times;</span>
         </div>
         <div class="overlay-block2">
-          <a href="#">Меню</a>
-          <a href="#">Доставка</a>
-          <a href="#">Оплата</a>
-          <button class="big-btn">Бронь столика</button>
+          <a href="index.html">Меню</a>
+          <a href="delivery.html">Доставка</a>
+          <a href="payment.html">Оплата</a>
+          <button class="big-btn btn-reserve">Бронь столика</button>
         </div>
         <div class="nav-logos">
           <a href="#" class="youtube-logo"></a>
@@ -33,7 +33,7 @@
     <section class="header">
       <aside class="aside d-flex">
         <div class="aside-top">
-          <a href="#" title="Food" class="logo"></a>
+          <a href="index.html" title="Food" class="logo"></a>
           <!-- Вызов curtain menu -->
           <a href="#" class="menu-logo" onclick="openNav()"></a> 
         </div>
@@ -43,6 +43,7 @@
           <a href="#" class="telegram-logo"></a>
         </div>
       </aside>
+
       <div class="header-main">
         <div class="nav-links" id="navLinks">
           <ul class="nav-item d-flex">
@@ -57,30 +58,29 @@
             </li>
             
           </ul>
-          <button class="btn" id="btn">Бронь столика</button>
-            <!-- Modal box -->
-            <div id="modal" class="modal"> 
-              <div class="modal-content">
-                <span class="close" id="close">&times;</span>
-                <div class="modal-block">
-                  <div class="food-logo"></div>
-                  <p>Забронировать столик</p>
-                  <input class="modal-input" type="text" placeholder="Имя">
-                  <input class="modal-input" type="tel" placeholder="Телефон">
-                  <div class="modal-block-numbers">
-                    <input class="modal-input2" type="number" placeholder="Гостей">
-                    <input class="modal-input2" type="number" placeholder="Время">
-                  </div>
-                  <a class="btn" href="#modal">Забронировать</a>
+          <button class="btn btn-reserve" id="btn">Бронь столика</button>
+          <!-- Modal box -->
+          <div id="modal" class="modal"> 
+            <div class="modal-content">
+              <span class="close" id="close">&times;</span>
+              <form class="modal-block" action="">
+                <div class="food-logo"></div>
+                <p>Забронировать столик</p>
+                <input class="modal-input" type="text" placeholder="Имя" required>
+                <input class="modal-input" type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Телефон" required>
+                <div class="modal-block-numbers">
+                  <input class="modal-input2" type="number" placeholder="Гостей">
+                  <input class="modal-input2" type="number" placeholder="Время">
                 </div>
-              </div>
+                <button class="btn" type="submit">Забронировать</button>
+              </form>
             </div>
+          </div>
         </div>
         <h1>Видовой ресторан Food Exxe Relo на Крестовском острове</h1>
       </div>
     </section>
   </header>
-
   <main>
     <!-- About -->
     <section class="about">
@@ -173,7 +173,7 @@
               <p><b>Вск-Чт</b> с 12:00 до 23:00</p>
               <p><b>Пт-Сб</b> с 12:00 до 03:00</p>
               <div class="time-work-btn-block">
-                <a href="#modal" class="btn">Бронь столика</a>
+                <button class="btn btn-reserve">Бронь столика</button>
                 <a href="#" class="btn2">Задать вопрос</a>
               </div>
             </div>
